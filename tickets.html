@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFest 2026 - Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-box">
+            <div class="logo">MusicFest 2026</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="lineup.html" class="nav-link">Lineup</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="tickets.html" class="nav-link active">Tickets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="tickets-box">
+        <h2>Book Tickets Now!</h2>
+
+        <form id="bookingform"> <!--making all of elements into one form (name,email ect..)-->
+            <div class="form-group"> <!--div class to formatat all the forms-->
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <!--tells the type of input and makes it a required field for it to continue-->
+                <div class="error-message" id="nameError"></div> <!--establishes what type of error to warn the user-->
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <div class="error-message" id="phoneError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="ticketCount">Number of Tickets *</label>
+                <input type="number" id="ticketcount" name="ticketCount" min="1" max="5" placeholder="Tickets - Max 5" required>
+                <div class="error-message" id="ticketError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="ticketType">Ticket Type *</label>
+                <select id="ticketType" name="ticketType" required>
+                    <option value="">Select ticket type</option>
+                    <option value="general">General Admission (£40)</option>
+                    <option value="vip">VIP (£150)</option>
+                    <option value="premium">Premium (£250)</option>
+                </select>
+                <div class="error-message" id="typeError"></div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method *</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">Select payment method</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <div class="error-message" id="paymentError"></div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="requirements">Special Requirements</label>
+                <textarea id="requirements" name="requirements"
+                    placeholder="e.g., accessibility requirements, dietary needs, etc."></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-submit">Complete Booking</button>
+                <button type="reset" class="btn btn-reset">Clear Form</button>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required> <!--checkbox for term and conditons-->
+                    <label for="terms">I agree to the Terms and Conditions *</label>
+                </div>
+                <div class="error-message" id="termsError"></div>
+            </div>
+        </form>
+    </main>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFest 2026 - Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!--Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-box">
+            <div class="logo">MusicFest 2026</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="lineup.html" class="nav-link">Lineup</a></li>
+                <li><a href="schedule.html" class="nav-link active">Schedule</a></li>
+                <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main class="schedule-box">
+    <h2>Performance Schedule</h2>
+
+    <div class="day1-day2"> <!--detrmines which button is active having different effects depending on the day-->
+        <button class="day-button active" onclick="filterByDay ('day1',this)">Day 1 - Feb 21st </button>
+        <button class="day-button" onclick="filterByDay ('day2',this)">Day 2 - Feb 22nd </button>
+    </div>
+
+    <div id="day1" class="day-section active">
+        <table class="schedule-table"> <!--making a table for time, artist and stage name-->
+            <thead>
+                <tr>
+                    <th>Time</th> <!--tr is headings-->
+                    <th>Artist</th>
+                    <th>Stage Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6.00 PM</td> <!--td is elements-->
+                    <td>Joji</td>
+                    <td>Papa Franku</td>
+                </tr>
+                <tr>
+                    <td>6.30 PM</td>
+                    <td>Taylor Swift</td>
+                    <td>Willow</td>
+                </tr>
+                <tr>
+                    <td>8.30 PM</td>
+                    <td>Lana Del Ray</td>
+                    <td>Mountain Dew</td>
+                </tr>
+                <tr>
+                    <td>9.00 PM</td>
+                    <td>Ellah Boh</td>
+                    <td>Babydoll</td>
+                </tr>
+                <tr>
+                    
+                    <td>9.45 PM</td>
+                    <td>Ariana Grande</td>
+                    <td>Glinda</td>
+                </tr>
+                <tr>
+                    <td> 12.00 AM</td>
+                    <td>Selena Gomez</td>
+                    <td>Alex Russo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="day2" class="day-section">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Artist</th>
+                    <th>Stage Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 2.00 PM</td>
+                    <td>Selena Gomez</td>
+                    <td>Alex Russo</td>
+                </tr>
+                <tr>
+                    <td>2.30 PM</td>
+                    <td>Ellah Boh</td>
+                    <td>Babydoll</td>
+                </tr>
+                <tr>
+                    <td>4.00 PM</td>
+                    <td>Joji</td>
+                    <td>Papa Franku</td>
+                </tr>
+                <tr>
+                    <td>6.30 PM</td>
+                    <td>Ariana Grande</td>
+                    <td>Glinda</td>
+                </tr>
+                <tr>
+                    <td>9.30 PM</td>
+                    <td>Lana Del Ray</td>
+                    <td>Mountain Dew</td>
+                </tr>
+                <tr>
+                    <td>11.00 PM</td>
+                    <td>Taylor Swift</td>
+                    <td>Willow</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+            
+
+
+
+   </main> 
+   <script src="script.js"></script>
+</body>
+</html>

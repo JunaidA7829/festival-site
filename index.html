@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFest 2026</title>
+    <link rel="stylesheet" href="style.css"> <!--links css with html-->
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <div class="nav-box"> <!--to style the nav bar easier in css-->
+            <div class="logo">MusicFest 2026</div>
+            <ul class="nav-menu"> <!--make the nav bar a list-->
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <!--selected link will be styled differently-->
+                <li><a href="lineup.html" class="nav-link">Lineup</a></li>
+                <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Title screen-->
+    <header class="title-section"> <!--making title contents of the home page-->
+        <div class="title-content">
+            <h1>Festival of Colours</h1>
+            <p class="subheader">MusicFest 2026</p>
+            <p class="overview">Experiance music through visuals as we feature some of the world best artist as they
+                represent thier unique colour</p>
+            <a href="tickets.html" class="call-to-action">Buy Tickets</a>
+            <!-- all these classes are seperate so they can be styled uniquley such as buy tickets being different here to the nav bar-->
+        </div>
+    </header>
+
+    <!--Title information-->
+    <section class="information"> <!--make information a seperate catorgory-->
+        <div class="box">
+            <h2>Details</h2>
+            <div class="information-grid"> <!--format dates location theme-->
+                <div class="information-dlt">
+                    <h3>Dates</h3>
+                    <p>Febuary 21st-22nd 2026</p>
+                </div>
+                <div class="information-dlt">
+                    <h3>Location</h3>
+                    <p>Manchester O2 Arena</p>
+                </div>
+                <div class="information-dlt">
+                    <h3>Theme</h3>
+                    <p>Colours</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Featured artist section on the home page preview-->
+    <main class="lineup-box">
+        <div class="box">
+            <h2>Featured Artists</h2>
+            <div class="artist-grid">
+
+                <article class="artist-card"> <!-- making artist card andd preview div to be styled later-->
+                    <div class="artist-preview" style="border-top: 4px solid #f80a1e;">
+                        <img src="pictures/joji-released-his-second-album-nectar-in-2020-1602079506-view-0.webp"
+                            alt="Joji">
+                        <h4>Joji</h4>
+                        <p style="color: rgb(151, 140, 126);">Representing:</p>
+                        <p style="color: #f80a1e;">Red</p>
+                    </div>
+                </article>
+
+                <div class="artist-preview" style="border-top: 4px solid #81797d;">
+                    <img src="pictures/zal8vvatm3u51.webp" alt="Lana-Del-Ray">
+                    <h4>Lana Del Ray</h4>
+                    <p style="color: rgb(151, 140, 126);">Representing:</p>
+                    <p style="color: #81797d;">Grey</p>
+                </div>
+
+
+                <div class="artist-preview" style="border-top: 4px solid #b8a66c;">
+                    <img src="pictures/Petrusich-TaylorSwift.webp" alt="Taylor-Swift">
+                    <h4>Taylor Swift</h4>
+                    <p style="color: rgb(151, 140, 126);">Representing:</p>
+                    <p style="color: #b8a66c;">Creame</p>
+                </div>
+
+
+                <div class="artist-preview" style="border-top: 4px solid #FF1493;">
+                    <img src="pictures/YmneOt.webp" alt="Ariana-Grande">
+                    <h4>Ariana Grande</h4>
+                    <p style="color: rgb(151, 140, 126);">Representing:</p>
+                    <p style="color: #FF1493;">Pink</p>
+                </div>
+
+
+                <div class="artist-preview" style="border-top: 4px solid #200c7a;">
+                    <img src="pictures/SHOF_2025_Ella-Boh_Abe-Olman-2025_BMI.jpg" alt="Ellah-Boh">
+                    <h4>Ellah Boh</h4>
+                    <p style="color: rgb(151, 140, 126);">Representing:</p>
+                    <p style="color: #200c7a;">Blue</p>
+                </div>
+
+
+                <div class="artist-preview" style="border-top: 4px solid #0a0a0a;">
+                    <img src="pictures/8b4abc7503519de0ddc1cf7cd9e067a2.jpg" alt="Selena-Gomez">
+                    <h4>Selena Gomez</h4>
+                    <p style="color: rgb(151, 140, 126);">Representing:</p>
+                    <p style="color: #0a0a0a;">Black</p>
+                </div>
+
+            </div>
+
+            </section>
+            <script src="script.js"></script> <!--links javascript to html-->
+</body>
+</html>
